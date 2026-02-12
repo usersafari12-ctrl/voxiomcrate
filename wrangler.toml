@@ -1,0 +1,5 @@
+name = "voxiom-crate-sim"                  # ← Change this to something unique/lowercase (no spaces). This becomes part of your URL
+compatibility_date = "2026-02-11"           # Safe recent date
+
+# This is the key: tell Wrangler this is a static assets-only project
+assets = { directory = "./" }               # ← "./" means current folder (where index.html lives)

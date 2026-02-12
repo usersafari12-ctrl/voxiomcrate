@@ -100,7 +100,7 @@
     // ─── Apply Skin to Gun ──────────────────────────────────────────────────────
     function applyPsychicTwist(gun) {
       const texLoader = new THREE.TextureLoader();
-      texLoader.load('./textures/psychic.png', (tex) => {
+      texLoader.load('./psychic.png', (tex) => {
         tex.flipY = false;
         tex.colorSpace = THREE.SRGBColorSpace;
         tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
@@ -127,7 +127,7 @@
         currentItem = null;
       }
 
-      loader.load('./models/ak.glb', (gltf) => {
+      loader.load('./ak.glb', (gltf) => {
         currentItem = gltf.scene;
         currentItem.scale.set(1.6, 1.6, 1.6);
         currentItem.position.set(0, 1, 0);
